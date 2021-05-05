@@ -168,7 +168,24 @@ namespace UnityEngine.Rendering.Universal.Internal
 
                 // Render the lut
                 Blit(cmd, m_InternalLut.id, m_InternalLut.id, material);
-
+                #if UNITY_EDITOR
+                if(LutCopy.s_AllowCopy == false)
+                {
+                    Debug.Log($"take lut copy!");
+                    LutCopy.s_AllowCopy = true;
+                    if(LutCopy.s_CopyTex != null)
+                    {
+                        Object.DestroyImmediate(LutCopy.s_CopyTex);
+                    }
+                    if(LutCopy.s_CopyTex2D != null)
+                    {
+                        Object.DestroyImmediate(LutCopy.s_CopyTex2D);
+                    }
+                    LutCopy.s_CopyTex2D = new Texture2D(lutWidth, lutHeight, format, TextureCreationFlags.None);
+                    LutCopy.s_CopyTex = new RenderTexture(desc);
+                    cmd.Blit(m_InternalLut.id, LutCopy.s_CopyTex);
+                }
+                #endif
                 renderingData.cameraData.xr.StartSinglePass(cmd);
             }
 
