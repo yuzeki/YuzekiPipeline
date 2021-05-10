@@ -177,7 +177,7 @@ namespace UnityEditor.Rendering.Universal.ShaderGraph
 #region Includes
         static class SpriteUnlitIncludes
         {
-            const string kSpriteUnlitPass = "Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/Includes/SpriteUnlitPass.hlsl";
+            const string kSpriteUnlitPass = "Assets/com.unity.render-pipelines.universal/Editor/ShaderGraph/Includes/SpriteUnlitPass.hlsl";
 
             public static IncludeCollection Unlit = new IncludeCollection
             {

@@ -600,14 +600,14 @@ namespace UnityEditor.Rendering.Universal.ShaderGraph
     {
         const string kColor = "Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl";
         const string kTexture = "Packages/com.unity.render-pipelines.core/ShaderLibrary/Texture.hlsl";
-        const string kCore = "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl";
-        const string kLighting = "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl";
-        const string kGraphFunctions = "Packages/com.unity.render-pipelines.universal/ShaderLibrary/ShaderGraphFunctions.hlsl";
-        const string kVaryings = "Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/Includes/Varyings.hlsl";
-        const string kShaderPass = "Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/Includes/ShaderPass.hlsl";
-        const string kDepthOnlyPass = "Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/Includes/DepthOnlyPass.hlsl";
-        const string kDepthNormalsOnlyPass = "Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/Includes/DepthNormalsOnlyPass.hlsl";
-        const string kShadowCasterPass = "Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/Includes/ShadowCasterPass.hlsl";
+        const string kCore = "Assets/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl";
+        const string kLighting = "Assets/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl";
+        const string kGraphFunctions = "Assets/com.unity.render-pipelines.universal/ShaderLibrary/ShaderGraphFunctions.hlsl";
+        const string kVaryings = "Assets/com.unity.render-pipelines.universal/Editor/ShaderGraph/Includes/Varyings.hlsl";
+        const string kShaderPass = "Assets/com.unity.render-pipelines.universal/Editor/ShaderGraph/Includes/ShaderPass.hlsl";
+        const string kDepthOnlyPass = "Assets/com.unity.render-pipelines.universal/Editor/ShaderGraph/Includes/DepthOnlyPass.hlsl";
+        const string kDepthNormalsOnlyPass = "Assets/com.unity.render-pipelines.universal/Editor/ShaderGraph/Includes/DepthNormalsOnlyPass.hlsl";
+        const string kShadowCasterPass = "Assets/com.unity.render-pipelines.universal/Editor/ShaderGraph/Includes/ShadowCasterPass.hlsl";
         const string kTextureStack = "Packages/com.unity.render-pipelines.core/ShaderLibrary/TextureStack.hlsl";
 
         public static readonly IncludeCollection CorePregraph = new IncludeCollection

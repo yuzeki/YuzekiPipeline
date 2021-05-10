@@ -14,7 +14,7 @@ SHAPE_LIGHT(2)
 SHAPE_LIGHT(3)
 #endif
 
-#include "Packages/com.unity.render-pipelines.universal/Shaders/2D/Include/CombinedShapeLightShared.hlsl"
+#include "Assets/com.unity.render-pipelines.universal/Shaders/2D/Include/CombinedShapeLightShared.hlsl"
 
 PackedVaryings vert(Attributes input)
 {
